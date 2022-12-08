@@ -13,9 +13,10 @@ def test_hello_aucun_prenom():
         assert True, EmptyName
 
 def test_hello_too_long():
-    name = 'SuperSuperSuperSuperSuperSuper'
+    name = 'SuperSuperSuperSuperSuper'
     try:
         hello.hello(name)
+        assert False
     except Exception as TooLong:
         assert True, TooLong
 
