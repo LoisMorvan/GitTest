@@ -5,4 +5,4 @@ def hello(name):
         name = str(name)
     elif (isinstance(name, bool)):
         name = str(name)
-    return "Hello super" + name
+    return "Hello " + name
